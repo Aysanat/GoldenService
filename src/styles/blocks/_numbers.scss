@@ -1,0 +1,28 @@
+.numbers {
+  padding: 40px 0 40px;
+  background-color: #F2F8FF;
+}
+
+.numbers_inner {
+  @include inner;
+}
+
+.numbers_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 82px;
+  list-style: none;
+}
+
+.numbers_item {
+  text-align: center;
+}
+
+.numbers_num {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+}

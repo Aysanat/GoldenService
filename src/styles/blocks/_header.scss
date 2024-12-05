@@ -1,0 +1,32 @@
+.header {
+  padding: 20px 0 20px;
+  box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
+}
+
+.header_inner {
+  @include inner;
+}
+
+.header_block {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+  width: 50px;
+  height: 42px;
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_list {
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+}

@@ -1,0 +1,52 @@
+.promo {
+  padding: 170px 0 170px;
+  background-image: url('../images/gs-promo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo_inner {
+  @include inner;
+}
+
+.promo_row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.promo_half {
+  width: 50%;
+}
+
+.promo_name {
+  margin-bottom: 20px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+}
+
+.promo_desc {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.promo_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.promo_price {
+  margin-bottom: 16px;
+}
+
+.promo_btn {
+  padding: 12px 37px;
+  color: #fff;
+  background-color: #4295E4;
+  border: 0;
+}
+

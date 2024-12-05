@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+}
+
+.menu_list {
+  margin-left: 101px;
+  display: flex;
+  column-gap: 32px;
+  list-style: none;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: black;
+}
