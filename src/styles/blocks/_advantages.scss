@@ -1,0 +1,30 @@
+.advantages {
+  padding: 83px 0 100px;
+}
+
+.advantages_inner {
+  @include inner;
+}
+
+.advantages_title {
+  margin-bottom: 56px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  text-align: center;
+}
+
+.advantages_list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  text-align: center;
+  box-shadow: 1px 0px 0px 0px #C4CDD5 inset;
+  box-shadow: -1px 0px 0px 0px #C4CDD5 inset;
+}
