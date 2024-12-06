@@ -1,0 +1,18 @@
+.feedback {
+  padding: 64px 0 56px;
+  text-align: center;
+  background-color: #F2F8FF;
+}
+
+.feedback_inner {
+  @include inner;
+}
+
+.feedback_title {
+  margin-bottom: 24px;
+  @include title;
+}
+
+.feedback_text {
+  margin-bottom: 24px;
+}

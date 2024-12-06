@@ -1,0 +1,42 @@
+.footer {
+  padding: 55px 0 0 0;
+  background-color: #0D2436;
+}
+
+.footer_inner {
+  @include inner;
+}
+
+.footer_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_logo {
+  width: 105px;
+  height: 88px;
+  margin-bottom: 144px;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  list-style: none;
+}
+
+.footer_link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer_copyright {
+  padding: 24px 0 24px;
+  text-align: center;
+  color: rgba(#fff, .6);
+  border-top: 1px solid rgba(#fff, .08);
+}

@@ -1,0 +1,37 @@
+.links {
+  margin-left: auto;
+  padding-bottom: 55px;
+}
+
+.links_sort {
+  display: flex;
+  flex-direction: row;
+  column-gap: 97px;
+  list-style: none;
+  color: #fff;
+}
+
+.links_sort a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.links_sort_title {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.links_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  list-style: none;
+}
+
+.links_heading {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #C4CDD5;
+}
