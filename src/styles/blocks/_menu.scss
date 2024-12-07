@@ -10,6 +10,41 @@
 }
 
 .menu_link {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.87px;
   text-decoration: none;
   color: black;
+}
+
+.menu_btn {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.87px;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu_btn_icon {
+  margin-left: 8px;
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-image: url('../images/menu-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
 }
