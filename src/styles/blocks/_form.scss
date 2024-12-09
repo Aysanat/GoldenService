@@ -1,24 +1,43 @@
 .form {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
+
+  @media (max-width: $mobile-max) {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 .form_field {
   height: 50px;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }
 
 .form_input {
+  width: 100%;
   padding: 12px 0 12px 16px;
   display: inline-block;
   background-color: rgba(#161C240A, .04);
   border: 0;
+
+  @media (max-width: $mobile-max) {
+    padding: 13px 0 13px 16px;
+  }
 }
 
 .form_btn {
+  display: block;
   padding: 12px 70px;
   text-decoration: none;
   color: #fff;
   background-color: #4295E4;
   border: 0;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }

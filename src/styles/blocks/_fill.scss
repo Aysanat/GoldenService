@@ -1,0 +1,68 @@
+.fill {
+  padding: 32px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.fill_title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.fill_row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.fill_row_2 {
+  margin: 16px 0 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.fill_field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fill_field_special {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fill_input {
+  padding: 10px 0 9px 12px;
+  border: 1px solid #EBECEC;
+}
+
+.fill_checkbox {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.fill_row_3 {
+  margin-top: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.fill_cost {
+  display: inline-block;
+  margin-right: auto;
+}
+
+.fill_btn {
+  display: inline-block;
+  padding: 12px 57px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4295E4;
+  border: 0;
+}

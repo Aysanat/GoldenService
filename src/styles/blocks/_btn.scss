@@ -1,7 +1,12 @@
 .btn {
+  display: inline-block;
   padding: 12px 37px;
   text-decoration: none;
   color: #fff;
   background-color: #4295E4;
   border: 0;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+  }
 }

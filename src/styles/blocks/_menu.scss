@@ -1,5 +1,9 @@
 .menu {
   display: flex;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .menu_list {

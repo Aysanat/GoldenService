@@ -7,6 +7,10 @@
   padding: 20px 0 20px;
   box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
   background-color: #fff;
+
+  @media (max-width: $mobile-max) {
+    padding: 19px 0 19px;
+  }
 }
 
 .header_inner {
@@ -22,6 +26,10 @@
   width: 50px;
   height: 42px;
   display: inline-block;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .logo {
@@ -47,4 +55,45 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.header_phone {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.header_burger {
+  @media (min-width: $desctop) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-max) {
+    position: relative;
+    width: 24px;
+    height: 20px;
+    border-top: 2px solid $color-dark;
+    border-bottom: 2px solid $color-dark;
+    border-right: none;
+    border-left: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $color-dark;
+    }
+  }
 }

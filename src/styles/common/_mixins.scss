@@ -10,4 +10,10 @@
   font-weight: 600;
   line-height: 62px;
   text-align: center;
+
+  @media (max-width: $mobile-max) {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+  }
 }

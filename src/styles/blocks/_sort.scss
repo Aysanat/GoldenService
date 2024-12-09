@@ -1,0 +1,13 @@
+.sort {
+  padding: 168px 0 100px;
+  text-align: center
+}
+
+.sort_inner {
+  @include inner;
+}
+
+.sort_title {
+  margin-bottom: 64px;
+  @include title;
+}

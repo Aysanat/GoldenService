@@ -2,6 +2,10 @@
   padding: 64px 0 56px;
   text-align: center;
   background-color: #F2F8FF;
+
+  @media (max-width: $mobile-max) {
+    padding: 32px 0 32px;
+  }
 }
 
 .feedback_inner {

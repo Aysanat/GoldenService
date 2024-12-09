@@ -4,5 +4,6 @@ $(document).ready(function() {
 
   $('.js-menu-catalog').on('click', function() {
     $dropdown.slideToggle();
-  })
+  });
+
 })

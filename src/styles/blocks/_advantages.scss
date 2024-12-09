@@ -1,5 +1,9 @@
 .advantages {
   padding: 83px 0 100px;
+
+  @media (max-width: $mobile-max) {
+    padding: 40px 0 40px;
+  }
 }
 
 .advantages_inner {
@@ -7,16 +11,17 @@
 }
 
 .advantages_title {
-  margin-bottom: 56px;
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 62px;
-  text-align: center;
+  @include title;
 }
 
 .advantages_list {
+  margin-top: 24px;
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+  }
 }
 
 .advantages_item {
@@ -27,4 +32,12 @@
   text-align: center;
   box-shadow: 1px 0px 0px 0px #C4CDD5 inset;
   box-shadow: -1px 0px 0px 0px #C4CDD5 inset;
+
+  @media (max-width: $mobile-max) {
+    padding: 24px 28px;
+    row-gap: 16px;
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
+    box-shadow: 0px 1px 0px 0px #C4CDD5 inset;
+
+  }
 }

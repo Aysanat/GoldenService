@@ -1,0 +1,50 @@
+.steps {
+  padding: 100px 0 100px;
+}
+
+.steps_inner {
+  @include inner;
+}
+
+.steps_title {
+  @include title;
+  text-align: left;
+}
+
+.steps_enumeration {
+  margin-top: 48px;
+  display: flex;
+  gap: 30px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.33% - 60px / 4);
+  position: relative;
+  gap: 12px;
+}
+
+.step_image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.step_number {
+  right: 2%;
+  top: -2%;
+  padding: 9px 18px;
+  position: absolute;
+  color: #fff;
+  background-color: $color-accent;
+}
+
+.step_heading {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  border-left: 2px solid $color-accent;
+}

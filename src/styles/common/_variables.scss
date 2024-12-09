@@ -17,3 +17,10 @@ $color-click: #2E81D0;
 // indents
 
 // breakpoints
+
+$mobile: 320px;
+$tablet: 768px;
+$desctop: 1280px;
+
+$mobile-max: $tablet - 1px;
+$tablet-max: $desctop - 1px;

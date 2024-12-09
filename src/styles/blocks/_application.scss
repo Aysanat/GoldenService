@@ -1,0 +1,20 @@
+.application {
+  padding: 162px 0 80px;
+  background-color: #F2F8FF;
+}
+
+.application_inner {
+  @include inner;
+}
+
+.application_title {
+  @include title;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.application_row {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
