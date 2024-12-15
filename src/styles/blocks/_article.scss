@@ -1,0 +1,60 @@
+.article {
+  padding: 96px 0 100px;
+}
+
+.article_inner {
+  @include inner;
+}
+
+.article_block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.article_half {
+  flex-shrink: 0;
+  flex-basis: calc(50% - 30px / 2);
+}
+
+.article_visual {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article_image {
+  width: 100%;
+}
+
+.article_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article_title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.article_text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.article_row {
+  display: flex;
+  gap: 32px;
+}
+
+.article_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
