@@ -1,0 +1,39 @@
+.product {
+  padding: 162px 0 40px;
+}
+
+.product_inner {
+  @include inner;
+}
+
+.product_row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.product_half {
+  flex-basis: calc(50% - 30px / 2);
+}
+
+.product_visual {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product_image {
+  display: inline-block;
+}
+
+.product_info {
+  display: flex;
+  gap: 12px;
+}
+
+.product_title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
