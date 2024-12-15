@@ -37,3 +37,14 @@
   font-weight: 600;
   line-height: 30px;
 }
+
+.product_list {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+
+.product_item {
+  display: flex;
+  gap: 8px;
+}

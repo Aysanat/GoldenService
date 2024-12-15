@@ -1,0 +1,21 @@
+.tick {
+  position: relative;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: $color-accent;
+  border-radius: 2px;
+}
+
+.tick_icon {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
