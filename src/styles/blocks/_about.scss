@@ -1,0 +1,38 @@
+.about {
+  padding: 164px 0 100px;
+}
+
+.about_inner {
+  @include inner;
+}
+
+.about_row {
+  display: flex;
+  align-items: center;
+  gap: 109px
+}
+
+.about_visual {
+  position: relative;
+}
+
+.about_title {
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  color: $color-accent;
+  border-bottom:  1px solid $color-accent;
+}
+
+.about_name {
+  color: $color-accent;
+}
+
+.about_company {
+  margin-bottom: 12px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+}

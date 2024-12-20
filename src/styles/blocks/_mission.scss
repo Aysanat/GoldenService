@@ -1,0 +1,73 @@
+.mission {
+  padding: 100px 0 100px;
+}
+
+.mission_inner {
+  @include inner;
+}
+
+.mission_row {
+  display: flex;
+  align-items: center;
+  gap: 82px
+}
+
+.mission_title {
+  margin-bottom: 24px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  color: $color-accent;
+  border-bottom:  1px solid $color-accent;
+}
+
+.mission_icon {
+  margin-bottom: 13px;
+  width: 32px;
+  height: 27.65px;
+  position: relative;
+}
+
+.mission_icon_item {
+  display: block;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.mission_quote {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.mission_visual {
+  position: relative;
+}
+
+.mission_photo_2 {
+  left: -10%;
+  bottom: -10%;
+  position: absolute;
+  border: 6px solid #fff;
+}
+
+.mission_art {
+  z-index: -100;
+  top: -5%;
+  left: -5%;
+  position: absolute;
+  display: block;
+}
+
+.mission_art_2 {
+  z-index: -100;
+  bottom: -5%;
+  right: -5%;
+  position: absolute;
+  display: block;
+}
