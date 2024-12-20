@@ -1,0 +1,47 @@
+.delivery {
+  padding: 164px 0 100px;
+}
+
+.delivery_inner {
+  @include inner;
+}
+
+.delivery_title {
+  @include title;
+  text-align: left;
+}
+
+.delivery_row {
+  margin-top: 24px;
+  display: flex;
+  gap: 30px;
+}
+
+.delivery_item {
+  position: relative;
+  flex-basis: calc(33.33% - 60px / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.delivery_image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delivery_logo_image {
+  right: 4%;
+  top: -6%;
+  position: absolute;
+}
+
+.delivery_heading {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  border-left: 2px solid $color-accent;
+}
