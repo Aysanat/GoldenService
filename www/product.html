@@ -124,7 +124,21 @@
 
             <div class="product_characters">
               <div class="product_complect">Комплектация</div>
-              <div class="product_color">Цвет</div>
+
+              <div class="product_color">
+                <p class="color_text">Цвет</p>
+                <div class="color_set">
+                  <div class="color_1 active"></div>
+                  <div class="color_2"></div>
+                  <div class="color_3"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product_cost">
+              <strong class="product_cost">33 000₽ <span>37 000₽</span></strong>
+              <button class="cost_btn">Купить</button>
+
             </div>
 
             <div class="accordion">
@@ -143,9 +157,11 @@
 
             <div class="accordion">
               <button class="accordion_btn js-accordion-btn">Монтаж и доставка
-                <div class="accordion_icon">
-                  <i class="accordion_icon_open" style="background-image: url('images/gs-product-open.svg');"></i>
-                  <i class="accordion_icon_close" style="background-image: url('images/gs-product-close.svg');"></i>
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
                 </div>
               </button>
               <div class="accordion_answer">
@@ -155,9 +171,11 @@
 
             <div class="accordion">
               <button class="accordion_btn js-accordion-btn">Гарантии и выгода
-                <div class="accordion_icon">
-                  <i class="accordion_icon_open" style="background-image: url('images/gs-product-open.svg');"></i>
-                  <i class="accordion_icon_close" style="background-image: url('images/gs-product-close.svg');"></i>
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
                 </div>
               </button>
               <div class="accordion_answer">
@@ -279,7 +297,82 @@
         </div>
 
         <div class="tab js-tab-item">
-          <div class="reviews js-tab-item"></div>
+          <div class="tab_row">
+            <div class="reviews js-reviews-list">
+              <div class="reviews_item">
+                <div class="reviews_row">
+                  <strong class="reviews_name">Андрей Попенко</strong>
+                  <p class="reviews_date">20 августа, 2021</p>
+                  <div class="reviews_stars">
+                    <i class="stars_icon">3</i>
+                  </div>
+                </div>
+                <p class="reviews_text">Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                <div class="reviews_actions">
+                  <button class="reviews_answer">Ответить</button>
+                  <button class="reviews_comments">1 комментарий</button>
+                </div>
+              </div>
+
+              <div class="reviews_item">
+                <div class="reviews_row">
+                  <strong class="reviews_name">Андрей Попенко</strong>
+                  <p class="reviews_date">20 августа, 2021</p>
+                  <div class="reviews_stars">
+                    <i class="stars_icon">5</i>
+                  </div>
+                </div>
+                <p class="reviews_text">Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                <div class="reviews_actions">
+                  <button class="reviews_answer">Ответить</button>
+                  <button class="reviews_comments">1 комментарий</button>
+                </div>
+              </div>
+
+              <div class="reviews_item">
+                <div class="reviews_row">
+                  <strong class="reviews_name">Андрей Попенко</strong>
+                  <p class="reviews_date">20 августа, 2021</p>
+                  <div class="reviews_stars">
+                    <i class="stars_icon">3</i>
+                  </div>
+                </div>
+                <p class="reviews_text">Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi, hendrerit dictum consequat tristique sed. Est ultrices etiam in lorem nulla a.Et feugiat eu scelerisque nulla mattis. At et enim dui mauris. Nisi</p>
+                <div class="reviews_actions">
+                  <button class="reviews_answer">Ответить</button>
+                  <button class="reviews_comments">1 комментарий</button>
+                </div>
+              </div>
+
+              <button class="reviews_more js-reviews-more">
+                <div class="reviews_load">
+                  <i class="load_icon" style="background-image: url('images/gs-reviews-load.svg');"></i>
+                </div>
+                Показать еще
+              </button>
+            </div>
+
+            <form action="" class="comment">
+              <div class="comment_field">
+                <label for="" class="comment_label">Ваша оценка</label>
+              </div>
+              <div class="comment_field">
+                <label for="name" class="comment_label">Ваше имя</label>
+                <input id="name" type="text" class="comment_input" placeholder="Введите Ваше имя">
+              </div>
+              <div class="comment_field">
+                <label for="email" class="comment_label">Ваш Email</label>
+                <input id="email" type="email" class="comment_input" placeholder="Введите Ваш Email">
+              </div>
+              <div class="comment_field">
+                <label for="comment" class="comment_label">Ваш комментарий</label>
+                <input id="comment" type="text" class="comment_input_text" placeholder="Введите Ваш комментарий">
+              </div>
+              <div class="comment_field">
+                <button class="comment_btn">Оставить отзыв</button>
+              </div>
+            </form>
+          </div>
         </div>
 
       </div>
@@ -469,6 +562,7 @@
   </footer>
 
   <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 

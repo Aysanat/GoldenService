@@ -48,3 +48,42 @@
   display: flex;
   gap: 8px;
 }
+
+.product_characters {
+  display: flex;
+  gap: 30px;
+}
+
+.product_color {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color_set {
+  display: flex;
+  gap: 12px;
+}
+
+.color_1,
+.color_2,
+.color_3 {
+  width: 40px;
+  height: 40px;
+
+  &.active {
+    border: 1px solid $color-accent;
+  }
+}
+
+.color_1 {
+  background-color: #fff;
+}
+
+.color_2 {
+  background-color: $color-dark;
+}
+
+.color_3 {
+  background-color: #E2C355;
+}
