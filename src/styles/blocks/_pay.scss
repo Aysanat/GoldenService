@@ -1,0 +1,49 @@
+.pay {
+  padding: 40px 0 40px;
+  border-bottom: 1px solid #C4CDD5;
+}
+
+.pay_inner {
+  @include inner;
+}
+
+.pay_title {
+  @include title;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.pay_row {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.pay_icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.pay_icon_item {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pay_type {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.pay_text {
+  margin-bottom: 24px;
+}

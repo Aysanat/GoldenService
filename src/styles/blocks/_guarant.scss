@@ -1,0 +1,36 @@
+.guarant {
+  padding: 40px 0 40px;
+  border-bottom: 1px solid #C4CDD5;
+}
+
+.guarant_inner {
+  @include inner;
+}
+
+.guarant_title {
+  @include title;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.guarant_text {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.guarant_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.guarant_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+

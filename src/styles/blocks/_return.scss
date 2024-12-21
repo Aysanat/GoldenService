@@ -1,0 +1,31 @@
+.return {
+  padding: 40px 0 100px;
+}
+
+.return_inner {
+  @include inner;
+}
+
+.return_title {
+  @include title;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.return_text {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.return_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.return_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
