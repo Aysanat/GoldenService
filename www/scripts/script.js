@@ -40,8 +40,6 @@ $(document).ready(function() {
   });
 
 
-
-
   $('.js-reviews-more').on('click', function() {
 
     let btn = this;

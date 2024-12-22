@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый проект</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_inner">
+      <div class="header_block">
+        <ul class="header_list">
+          <li class="header_item">
+            <a class="header_phone">+7 (966) 55 88 49</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="order">
+      <div class="order_inner">
+        <h1 class="order_title">Оформление заказа</h1>
+
+        <div class="order_row">
+          <form action="" class="order_form">
+            <strong class="order_purpose">1. Контактные данные</strong>
+
+            <div class="order_wrap">
+              <div class="order_field">
+                <label for="surname" class="order_label">Фамилия</label>
+                <input id="surname" type="text" class="order_input" placeholder="Зайцев">
+              </div>
+              <div class="order_field">
+                <label for="name" class="order_label">Имя</label>
+                <input id="name" type="text" class="order_input" placeholder="Михаил">
+              </div>
+              <div class="order_field">
+                <label for="number" class="order_label">Телефон</label>
+                <input id="number" type="number" class="order_input" placeholder="+7 (_ _ _) _ _  _ _  _ _ _">
+              </div>
+              <div class="order_field">
+                <label for="email" class="order_label">E-mail</label>
+                <input id="email" type="email" class="order_input" placeholder="example@mail.ru">
+              </div>
+            </div>
+
+            <strong class="order_purpose">2. Доставка</strong>
+            <div class="order_delivery">
+              <div class="order_del_field">
+                <input type="radio" name="delivery" value="1"> Сдек
+              </div>
+              <div class="order_del_field">
+                <input type="radio" name="delivery" value="2"> Почта России
+              </div>
+              <div class="order_del_field">
+                <input type="radio" name="delivery" value="3"> Деловые линии
+              </div>
+            </div>
+
+            <strong class="order_purpose">3. Оплата</strong>
+            <div class="order_pay">
+              <div class="order_pay_field">
+                <input type="radio" name="pay" value="cash"> Оплата при получении товара
+              </div>
+              <div class="order_pay_field">
+                <input type="radio" name="pay" value="card"> Банковская карта
+              </div>
+            </div>
+
+            <div class="order_field">
+              <label for="comment" class="order_label">Комментарий</label>
+              <input id="comment" type="text" class="order_input_comment" placeholder="Напишите комментарий">
+            </div>
+          </form>
+
+          <div class="total">
+            <h2 class="total_heading">Итого</h2>
+            <div class="total_product">
+              <div class="total_visual">
+                <img src="images/gs-total.png" alt="" class="total_image">
+              </div>
+              <div class="total_info">
+                <strong class="total_title">Дверной Замок Golden Soft для офиса</strong>
+                <p class="total_prize">+ Подарок: <br>
+                  <a href="" class="total_link">“Приложение к замкам Golden Service”</a>
+                </p>
+                <div class="total_row">
+                  <div class="total_counter"></div>
+                  <p class="total_cost">33 000₽ <span>37 000₽</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer class="footer">
+  </footer> -->
+
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

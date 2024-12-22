@@ -1,0 +1,36 @@
+.total {
+  padding: 16px 24px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 14px 38px -2px #0000000A;
+}
+
+.total_heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.total_product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.total_title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.total_prize {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.total_link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-accent;
+}
