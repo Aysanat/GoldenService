@@ -1,9 +1,6 @@
 .promo {
-  padding: 252px 0 170px;
-  background-image: url('../images/gs-promo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 200px 0 170px;
+
 
   @media (max-width: $mobile-max) {
     padding: 112px 0 40px;
@@ -17,7 +14,7 @@
 
 .promo_row {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 
   @media (max-width: $mobile-max) {
     flex-direction: column;
@@ -27,18 +24,22 @@
 }
 
 .promo_half {
-  width: 50%;
+ flex-basis: calc(50% - 40px / 2);
 
   @media (max-width: $mobile-max) {
     width: auto;
   }
 }
 
-.promo_image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.promo_visual {
+  max-height: 600px;
 }
+
+// .promo_image {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 .promo_name {
   margin-bottom: 20px;
