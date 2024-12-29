@@ -1,6 +1,7 @@
 .fill {
   padding: 32px;
   flex-shrink: 0;
+  flex-grow: 1;
   background-color: #fff;
 }
 
@@ -27,6 +28,10 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.form_field-third {
+  flex-basis: calc(33.33% - 32px / 3);
 }
 
 .fill_field_special {
@@ -56,11 +61,18 @@
 .fill_cost {
   display: inline-block;
   margin-right: auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $color-gray;
 }
 
 .fill_btn {
   display: inline-block;
   padding: 12px 57px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
   text-decoration: none;
   color: #fff;
   background-color: #4295E4;
