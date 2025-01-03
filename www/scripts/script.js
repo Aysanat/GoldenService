@@ -83,4 +83,23 @@ $(document).ready(function() {
     return result;
   }
 
+  let currentIndex = 0;
+  let items = $('.js-carousel-slide');
+  let totalItems = items.length;
+
+  function updateCarousel() {
+    let offset = -currentIndex * 100;
+    $('.js-carousel-row').css('transform', 'translateX(' + offset + '%)')
+  }
+
+  $('.js-next').on('click', function() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+  });
+
+  $('.js-prev').on('click', function() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateCarousel();
+  });
+
 })

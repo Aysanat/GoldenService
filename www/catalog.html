@@ -1,13 +1,11 @@
-<!doctype html>
-<html lang="ru">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой первый проект</title>
+  <title>Накладные электронные замки</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
-
 <body>
   <header class="header">
     <div class="header_inner">
@@ -18,19 +16,60 @@
         <nav class="menu">
           <ul class="menu_list">
             <li class="menu_item">
-              <a href="" class="menu_link">Главная</a>
+              <a href="product.html" class="menu_link">Главная</a>
             </li>
             <li class="menu_item">
-              <a href="" class="menu_link">Каталог</a>
+              <button class="menu_btn js-menu-catalog">Каталог
+                <i class="menu_btn_icon"></i>
+              </button>
+
+              <div class="dropdown js-dropdown">
+                <div class="dropdown_row">
+                  <ul class="dropdown_list">
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link active">Накладные электронные замки</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Врезные электронные замки</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для квартиры</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для дома</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для отелей</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для офиса</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для шкафчиков</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_link">Замки для раздевалок</a>
+                    </li>
+                    <li class="dropdown_item">
+                      <a href="" class="dropdown_btn">Смотреть все</a>
+                    </li>
+                  </ul>
+
+                  <div class="dropdown_visual">
+                    <img src="images/pop-up-image.jpg" alt="" class="dropdown_image">
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="menu_item">
-              <a href="" class="menu_link">Оптовая продажа</a>
+              <a href="wholesale.html" class="menu_link">Оптовая продажа</a>
             </li>
             <li class="menu_item">
-              <a href="" class="menu_link">О нас</a>
+              <a href="about.html" class="menu_link">О нас</a>
             </li>
           </ul>
         </nav>
+        <button class="header_burger"></button>
 
         <ul class="header_list">
           <li class="header_item">
@@ -40,95 +79,606 @@
             <a href="" class="header_link" style="background-image: url('images/gs-favourites.svg');"></a>
           </li>
           <li class="header_item">
-           <a href="" class="header_link" style="background-image: url('images/gs-bascet.svg');"></a>
+           <a href="order.html" class="header_link" style="background-image: url('images/gs-bascet.svg');"></a>
           </li>
         </ul>
       </div>
     </div>
   </header>
 
-  <!-- <main class="main">
-    <section class="sort">
-      <div class="sort_inner">
-        <h2 class="sort_title">Категории</h2>
-        <div class="tabs">
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Накладные электронные замки</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-2.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Врезные электроные замки</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-3.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для квартиры</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-4.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для дома</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-5.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для отелей</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-6.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для офиса</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-7.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для шкафчиков</p>
-            </div>
-          </a>
-
-          <a href="#" class="tabs_link js-tab-link">
-            <div class="tabs_visual">
-              <img src="images/gs-sort-catalog-8.jpg" alt="" class="tabs_image">
-            </div>
-            <div class="tabs_info">
-              <p class="tabs_purpose">Замки для раздевалок</p>
-            </div>
-          </a>
+  <main>
+    <section class="catalog">
+      <div class="catalog_inner">
+        <h1 class="catalog_title">Накладные электронные замки</h1>
+        <div class="catalog_functions">
+          <button class="catalog_skip">Сбросить фильтры</button>
         </div>
-        <a href="" class="tabs_btn">Смотреть все</a>
+        <div class="catalog_row">
+
+          <div class="filter">
+            <h3 class="filter_title">Фильтр</h3>
+
+            <div class="accordion accordion-filter">
+              <button class="accordion_btn js-accordion-btn">Цена
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
+                </div>
+              </button>
+              <div class="accordion_answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit numquam nihil esse fugiat ea cum aspernatur ratione veritatis, necessitatibus illo nesciunt at possimus officia iure recusandae voluptates aperiam atque.</p>
+              </div>
+            </div>
+
+            <div class="accordion accordion-filter">
+              <button class="accordion_btn js-accordion-btn">Особенности
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
+                </div>
+              </button>
+              <div class="accordion_answer accordion_answer-filter">
+                <div class="accordion_field">
+                  <input id="code" type="checkbox" class="accordion_checkbox">
+                  <label for="code" class="accordion_label">Электронные кодовые замки</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="biometric" type="checkbox" class="accordion_checkbox">
+                  <label for="biometric" class="accordion_label">Биометрические замки</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="print" type="checkbox" class="accordion_checkbox">
+                  <label for="print" class="accordion_label">Замок с отппечатком</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="card" type="checkbox" class="accordion_checkbox">
+                  <label for="card" class="accordion_label">Замок с бесконтактной картой</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="programm" type="checkbox" class="accordion_checkbox">
+                  <label for="programm" class="accordion_label">Программируемые замки</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="battery" type="checkbox" class="accordion_checkbox">
+                  <label for="battery" class="accordion_label">Замки на батарейках</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="remote" type="checkbox" class="accordion_checkbox">
+                  <label for="remote" class="accordion_label">Замки с удаленным доступом</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="bluetooth" type="checkbox" class="accordion_checkbox">
+                  <label for="bluetooth" class="accordion_label">Bluetooth замки</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="flat" type="checkbox" class="accordion_checkbox">
+                  <label for="flat" class="accordion_label">Электронные замки для квартиры</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="glass" type="checkbox" class="accordion_checkbox">
+                  <label for="glass" class="accordion_label">Замки для стеклянных дверей</label>
+                </div>
+                <div class="accordion_field">
+                  <input id="cylinder" type="checkbox" class="accordion_checkbox">
+                  <label for="cylinder" class="accordion_label">Электронные цилиндры</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion accordion-filter">
+              <button class="accordion_btn js-accordion-btn">Цвет
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
+                </div>
+              </button>
+              <div class="accordion_answer">
+              </div>
+            </div>
+
+            <div class="accordion accordion-filter">
+              <button class="accordion_btn js-accordion-btn">Материал
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
+                </div>
+              </button>
+              <div class="accordion_answer">
+              </div>
+            </div>
+
+            <div class="accordion accordion-filter">
+              <button class="accordion_btn js-accordion-btn">Размеры
+                <div class="accordion_open">
+                  <i class="accordion_open_icon" style="background-image: url('images/gs-product-open.svg');"></i>
+                </div>
+                <div class="accordion_close">
+                  <i class="accordion_close_icon" style="background-image: url('images/gs-product-close.svg');"></i>
+                </div>
+              </button>
+              <div class="accordion_answer">
+              </div>
+            </div>
+          </div>
+
+          <div class="cards_wrap">
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-2.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-not.svg');"></i>
+                    </div>
+                    <p class="card_text">Нет в наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Вариативный замок Golden Soft для отеля</a></h3>
+                <p class="card_cost">7 000₽ <span class="card_span">8 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-3.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">33 000₽ <span class="card_span">39 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-4.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">9 000₽ <span class="card_span">12 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-2.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-not.svg');"></i>
+                    </div>
+                    <p class="card_text">Нет в наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Вариативный замок Golden Soft для отеля</a></h3>
+                <p class="card_cost">7 000₽ <span class="card_span">8 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-3.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">33 000₽ <span class="card_span">39 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-4.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">9 000₽ <span class="card_span">12 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-2.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-not.svg');"></i>
+                    </div>
+                    <p class="card_text">Нет в наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Вариативный замок Golden Soft для отеля</a></h3>
+                <p class="card_cost">7 000₽ <span class="card_span">8 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-3.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">33 000₽ <span class="card_span">39 000₽</span></p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card_visual">
+                <img src="images/gs-popular-4.jpg" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-have.svg');"></i>
+                    </div>
+                    <p class="card_text">В наличии</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">Дверной Замок Golden Soft для офиса</a></h3>
+                <p class="card_cost">9 000₽ <span class="card_span">12 000₽</span></p>
+              </div>
+            </article>
+
+          </div>
+        </div>
       </div>
     </section>
 
-  </main> -->
+    <section class="popular">
+      <div class="popular_inner">
+        <div class="popular_row">
+          <h2 class="popular_title">Наши популярные продукты</h2>
+          <div class="popular_buttons">
+            <button class="popular_btn js-prev">prev</button>
+            <button class="popular_btn js-next">next</button>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="carousel_row js-carousel-row">
+
+            <div class="carousel_slide active js-carousel-slide">
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-1.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-2.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Вариативный замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">7 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-3.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-4.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">9 000₽</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel_slide js-carousel-slide">
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-1.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-2.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Вариативный замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">7 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-3.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-4.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">9 000₽</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel_slide js-carousel-slide">
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-1.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-2.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Вариативный замок Golden Soft для отеля</h3>
+                  <p class="carousel_cost">7 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-3.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">33 000₽</p>
+                </div>
+              </article>
+
+              <article class="carousel_item">
+                <div class="carousel_visual">
+                  <img src="images/gs-popular-4.jpg" alt="" class="carousel_image">
+                </div>
+                <div class="carousel_info">
+                  <h3 class="carousel_title">Дверной Замок Golden Soft для офиса</h3>
+                  <p class="carousel_cost">9 000₽</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="article">
+      <div class="article_inner">
+        <div class="article_block">
+          <div class="article_half">
+            <div class="article_content">
+              <h3 class="article_title">Eget quis quam metus, scelerisque.</h3>
+              <p class="article_text">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <div class="article_row">
+                <ul class="article_list">
+                  <li class="article_item">
+                    <div class="tick">
+                      <i class="tick_icon" style="background-image: url('images/gs-tick.svg');"></i>
+                    </div>
+                    <p class="article_purpose">Межкомнатую дверь</p>
+                  </li>
+                  <li class="article_item">
+                    <div class="tick">
+                      <i class="tick_icon" style="background-image: url('images/gs-tick.svg');"></i>
+                    </div>
+                    <p class="article_purpose">Деревянную дверь</p>
+                  </li>
+                </ul>
+
+                <ul class="article_list">
+                  <li class="article_item">
+                    <div class="tick">
+                      <i class="tick_icon" style="background-image: url('images/gs-tick.svg');"></i>
+                    </div>
+                    <p class="article_purpose">Межкомнатую дверь</p>
+                  </li>
+                  <li class="article_item">
+                    <div class="tick">
+                      <i class="tick_icon" style="background-image: url('images/gs-tick.svg');"></i>
+                    </div>
+                    <p class="article_purpose">Деревянную дверь</p>
+                  </li>
+                </ul>
+              </div>
+              <p class="article_text">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+          </div>
+
+          <div class="article_half">
+            <div class="article_visual">
+              <img src="images/gs-product-article-1.jpg" alt="" class="article_image">
+            </div>
+          </div>
+        </div>
+
+        <div class="article_block">
+          <div class="article_half">
+            <div class="article_visual">
+              <img src="images/gs-product-article-2.jpg" alt="" class="article_image">
+            </div>
+          </div>
+
+          <div class="article_half">
+            <div class="article_content">
+              <h3 class="article_title">Eget quis quam metus, scelerisque.</h3>
+              <p class="article_text">Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu porttitor molestie massa porttitor. Quisque at turpis ut proin eu et magna etiam rhoncus.</p>
+              <p class="article_text">Ac risus neque pulvinar tincidunt est. Tristique imperdiet viverra interdum in leo. Nullam ullamcorper id enim fermentum integer praesent bibendum. In ullamcorper purus scelerisque malesuada et egestas. Ac dictumst mauris sed facilisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 
   <footer class="footer">
     <div class="footer_inner">
@@ -226,7 +776,7 @@
     </div>
   </footer>
 
+  <script src="scripts/jquery-3.7.1.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
-
 </html>

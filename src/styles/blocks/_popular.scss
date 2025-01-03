@@ -1,0 +1,19 @@
+.popular {
+  padding: 100px 0 95px;
+}
+
+.popular_inner {
+  @include inner;
+}
+
+.popular_title {
+  @include title;
+  text-align: left;
+  margin-right: auto;
+}
+
+.popular_row {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+.carousel {
+  overflow: hidden;
+}
+
+.carousel_row {
+  display: flex;
+  transition: transform 500ms;
+}
+
+.carousel_slide {
+  min-width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.carousel_item {
+  flex-shrink: 0;
+  flex-basis: calc(25% - 90px / 4);
+}
+
+.carousel_visual {
+  width: 100%;
+}
+
+.carousel_image {
+  width: 100%;
+}
+
+.carousel_info {
+  padding: 10px 12px;
+}
+
+.carousel_title {
+  margin-bottom: 27px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-gray;
+}
+
+.carousel_cost {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.87px;
+}

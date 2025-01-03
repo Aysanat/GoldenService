@@ -1,9 +1,13 @@
 .accordion {
   padding: 16px;
+
+  &.accordion-filter {
+    padding: 12px 0 12px;
+    border-bottom: 1px solid #EDEDED;
+  }
 }
 
 .accordion_btn {
-  padding-bottom: 16px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,9 +74,26 @@
 }
 
 .accordion_answer {
+  padding-top: 16px;
   display: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: $color-gray;
+
+  &.accordion_answer-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.accordion_checkbox {
+  accent-color: $color-accent;
+}
+
+.accordion_field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
