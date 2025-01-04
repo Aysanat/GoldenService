@@ -90,16 +90,33 @@ $(document).ready(function() {
   function updateCarousel() {
     let offset = -currentIndex * 100;
     $('.js-carousel-row').css('transform', 'translateX(' + offset + '%)')
+    if (currentIndex === totalItems - 1) {
+      $('.js-next').attr('disabled', 'disabled')
+    } else {
+      $('.js-next').removeAttr('disabled')
+    }
+
+    if (currentIndex === 0) {
+      $('.js-prev').attr('disabled', 'disabled')
+    } else {
+      $('.js-prev').removeAttr('disabled')
+    }
   }
 
   $('.js-next').on('click', function() {
-    currentIndex = (currentIndex + 1) % totalItems;
-    updateCarousel();
+    if (currentIndex < totalItems - 1) {
+      currentIndex++
+      updateCarousel();
+    }
   });
 
   $('.js-prev').on('click', function() {
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    updateCarousel();
+    if (currentIndex > 0) {
+      currentIndex--
+      updateCarousel();
+    }
   });
+
+  updateCarousel();
 
 })

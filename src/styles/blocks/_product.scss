@@ -28,17 +28,27 @@
 }
 
 .product_info {
+  margin-bottom: 16px;
   display: flex;
   gap: 12px;
 }
 
 .product_title {
+  margin-bottom: 12px;
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
 }
 
+.product_purpose {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
 .product_list {
+  margin-bottom: 24px;
   display: flex;
   gap: 12px;
   list-style: none;
@@ -50,6 +60,7 @@
 }
 
 .product_characters {
+  margin-bottom: 24px;
   display: flex;
   gap: 30px;
 }
@@ -86,4 +97,24 @@
 
 .color_3 {
   background-color: #E2C355;
+}
+
+.product_cost {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.25px;
+
+  span {
+    margin-left: 12px;
+    text-decoration: line-through;
+    color: $color-light-gray;
+  }
+}
+
+.product_buttons {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 30px
 }

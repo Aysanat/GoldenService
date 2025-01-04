@@ -1,12 +1,29 @@
 .btn {
+  min-width: fit-content;
+  width: 220px;
   display: inline-block;
-  padding: 12px 37px;
+  padding: 12px 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
   text-decoration: none;
   color: #fff;
-  background-color: #4295E4;
+  background-color: $color-accent;
   border: 0;
+  transition: background-color .2s ease;
+  cursor: pointer;
 
   @media (max-width: $mobile-max) {
     width: 100%;
   }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+.btn_favorite {
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
 }
