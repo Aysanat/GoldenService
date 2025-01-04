@@ -90,6 +90,11 @@
 
 .accordion_checkbox {
   accent-color: $color-accent;
+  cursor: pointer;
+}
+
+.accordion_label {
+  cursor: pointer;
 }
 
 .accordion_field {

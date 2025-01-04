@@ -1,0 +1,51 @@
+.contacts {
+  align-self: flex-end;
+}
+
+.contacts_title {
+  @include title;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.contacts_row {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.contacts_item {
+  flex-basis: calc(33.33% - 32px / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts_heading {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.contacts_text {
+  color: $color-gray;
+}
+
+.contacts_link {
+  margin-bottom: 4px;
+  display: block;
+  text-decoration: none;
+  color: $color-gray;
+}
+
+.contacts_visual {
+  margin-top: 30px;
+}
+
+.contacts_image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
