@@ -1,5 +1,9 @@
 .popular {
   padding: 100px 0 95px;
+
+  @media (max-width: $mobile-max) {
+    padding: 0 0 36px 0;
+  }
 }
 
 .popular_inner {
@@ -16,4 +20,22 @@
   margin-bottom: 64px;
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 24px;
+  }
+}
+
+.popular_buttons {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.popular_btn {
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
 }

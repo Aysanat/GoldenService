@@ -31,6 +31,10 @@
 .categories_item {
   position: relative;
   flex-basis: calc(50% - 40px / 2);
+
+  @media (max-width: $mobile-max) {
+   flex-basis: calc(50% - 20px / 2);
+  }
 }
 
 .categories_image {
@@ -52,12 +56,23 @@
   flex-direction: column;
   row-gap: 16px;
   text-align: left;
+
+  @media (max-width: $mobile-max) {
+    position: static;
+    padding: 12px 0 0 0;
+  }
 }
 
 .categories_purpose {
   font-size: 22px;
   font-weight: 500;
   line-height: 34px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
 }
 
 .categories_btn {

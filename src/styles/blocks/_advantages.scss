@@ -36,8 +36,34 @@
   @media (max-width: $mobile-max) {
     padding: 24px 28px;
     row-gap: 16px;
-    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
-    box-shadow: 0px 1px 0px 0px #C4CDD5 inset;
+    box-shadow: none;
+    border-top: 1px solid #C4CDD5;
+    border-bottom: 1px solid #C4CDD5;
+  }
+}
 
+.advantages_visual {
+  width: 82px;
+  height: 82px;
+
+  @media (max-width: $mobile-max) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.advantages_icon {
+  width: 100%;
+}
+
+.advantages_text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
   }
 }

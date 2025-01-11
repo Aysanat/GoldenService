@@ -64,9 +64,6 @@
 }
 
 .header_burger {
-  @media (min-width: $desctop) {
-    display: none;
-  }
 
   @media (min-width: $tablet) {
     display: none;

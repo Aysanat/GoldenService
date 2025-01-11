@@ -1,6 +1,10 @@
 .sort {
   padding: 168px 0 100px;
-  text-align: center
+  text-align: center;
+
+  @media (max-width: $mobile-max) {
+    padding: 86px 0 40px;
+  }
 }
 
 .sort_inner {
@@ -10,18 +14,32 @@
 .sort_title {
   @include title;
   margin-bottom: 64px;
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 24px;
+  }
 }
 
 .sort_wrap {
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px
+  gap: 30px;
+
+  @media (max-width: $mobile-max) {
+    column-gap: 20px;
+    row-gap: 24px;
+  }
 }
 
-.sort_link {
+.sort_item {
+  position: relative;
   flex-basis: calc(25% - 90px / 4);
   text-decoration: none;
+
+  @media (max-width: $mobile-max) {
+    flex-basis: calc(50% - 20px / 2);
+  }
 }
 
 .sort_visual {
@@ -38,6 +56,17 @@
   font-weight: 400;
   line-height: 26px;
   color: #000;
+
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.sort_link {
+  position: absolute;
+  inset: 0;
 }
 
 .sort_btn {

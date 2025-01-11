@@ -60,3 +60,10 @@
     line-height: 72px;
   }
 }
+
+.numbers_text {
+  @media (max-width: $mobile-max) {
+   font-size: 14px;
+   line-height: 24px;
+  }
+}
