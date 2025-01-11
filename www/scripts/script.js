@@ -6,6 +6,11 @@ $(document).ready(function() {
     $dropdown.slideToggle();
   });
 
+  let $menu = $('.js-menu');
+  $('.js-burger').on('click', function() {
+    $menu.slideToggle();
+  });
+
   $('.js-tabs-link').on('click', function(event) {
     event.preventDefault();
 

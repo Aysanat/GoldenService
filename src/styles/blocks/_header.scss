@@ -70,27 +70,68 @@
   }
 
   @media (max-width: $mobile-max) {
-    position: relative;
-    width: 24px;
-    height: 20px;
-    border-top: 2px solid $color-dark;
-    border-bottom: 2px solid $color-dark;
-    border-right: none;
-    border-left: none;
-    background-color: inherit;
+    display: block;
+    width: 26px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
     cursor: pointer;
 
-    &::before {
-      content: '';
-      position: absolute;
+    .burger {
       margin: auto;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 24px;
+      position: relative;
+      width: 26px;
+      height: 24px;
+      background-color: inherit;
+    }
+
+    .span_1 {
+      position: absolute;
+      display: block;
+      width: 26px;
       height: 2px;
-      background-color: $color-dark;
+      background-color: black;
+      transition: .3s;
+    }
+
+    .span_2 {
+      top: 50%;
+      position: absolute;
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: black;
+      transition: .3s;
+    }
+
+    .span_3 {
+      right: 0;
+      top: 100%;
+      position: absolute;
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: black;
+      transition: .3s;
+    }
+
+    &.open {
+      .burger {
+        height: 0;
+      }
+
+      .span_1 {
+        transform: rotate(45deg);
+      }
+
+      .span_2 {
+        transform: rotate(-45deg);
+      }
+
+      .span_3 {
+        opacity: 0;
+      }
     }
   }
 }
