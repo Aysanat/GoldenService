@@ -1,5 +1,9 @@
 .about {
   padding: 164px 0 100px;
+
+  @media (max-width: $mobile-max) {
+    padding: 144px 0 40px;
+  }
 }
 
 .about_inner {
@@ -9,11 +13,20 @@
 .about_row {
   display: flex;
   align-items: center;
-  gap: 109px
+  gap: 109px;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+    gap: 42px;
+  }
 }
 
 .about_visual {
   position: relative;
+}
+
+.about_image {
+  width: 100%;
 }
 
 .about_title {
@@ -24,6 +37,11 @@
   line-height: 38px;
   color: $color-accent;
   border-bottom:  1px solid $color-accent;
+
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .about_name {
@@ -35,4 +53,20 @@
   font-size: 44px;
   font-weight: 600;
   line-height: 62px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+.about_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-gray;
+
+  @media (max-width: $mobile-max) {
+    line-height: 22px;
+  }
 }

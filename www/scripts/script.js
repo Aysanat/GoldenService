@@ -76,13 +76,19 @@ $(document).ready(function() {
 
     reviewsArray.forEach(function(review) {
       result += `<div class="reviews_item">
-            <strong class="reviews_name">"${review.name}"</strong>
-            <p class="reviews_date">"${review.date}"</p>
-            <div class="reviews_stars">
-                  <i class="stars_icon">"${review.stars}"</i>
+                <div class="reviews_row">
+                  <strong class="reviews_name">${review.name}</strong>
+                  <p class="reviews_date">${review.date}</p>
+                  <div class="reviews_stars">
+                    <i class="stars_icon">${review.stars}</i>
+                  </div>
                 </div>
-            <p class="reviews_text">"${review.text}"</p>
-          </div>`
+                <p class="reviews_text">${review.text}</p>
+                <div class="reviews_actions">
+                  <button class="reviews_answer">Ответить</button>
+                  <button class="reviews_comments">1 комментарий</button>
+                </div>
+              </div>`
     })
 
     return result;
