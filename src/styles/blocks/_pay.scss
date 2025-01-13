@@ -1,5 +1,9 @@
 .pay {
   padding: 40px 0 0;
+
+  @media (max-width: $mobile-max) {
+    padding: 32px 0 0;
+  }
 }
 
 .pay_inner {
@@ -10,6 +14,12 @@
   @include title;
   margin-bottom: 24px;
   text-align: left;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
 }
 
 .pay_row {
@@ -37,6 +47,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .pay_type {
   font-size: 20px;
   font-weight: 600;
@@ -45,4 +56,22 @@
 
 .pay_text {
   margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-gray;
+
+  @media (max-width: $mobile-max) {
+    line-height: 22px;
+  }
+}
+
+.pay_text-border {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #C4CDD5;
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 32px;
+  }
 }

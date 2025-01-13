@@ -1,5 +1,9 @@
 .delivery {
   padding: 164px 0 0;
+
+  @media (max-width: $mobile-max) {
+    padding: 148px 0 0;
+  }
 }
 
 .delivery_inner {
@@ -8,7 +12,14 @@
 
 .delivery_title {
   @include title;
+  padding-bottom: 24px;
   text-align: left;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
 }
 
 .delivery_row {
@@ -17,6 +28,12 @@
   display: flex;
   gap: 30px;
   border-bottom: 1px solid #C4CDD5;
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 32px;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .delivery_item {
@@ -46,4 +63,22 @@
   font-weight: 500;
   line-height: 30px;
   border-left: 2px solid $color-accent;
+
+  @media (max-width: $mobile-max) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.delivery_info {
+  display: flex;
+  gap: 8px;
+}
+
+.delivery_text {
+  @media (max-width: $mobile-max) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }

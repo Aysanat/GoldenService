@@ -5,6 +5,11 @@
   height: 16px;
   background-color: $color-accent;
   border-radius: 2px;
+
+  @media (max-width: $mobile-max) {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .tick_icon {

@@ -1,5 +1,9 @@
 .return {
   padding: 40px 0 100px;
+
+  @media (max-width: $mobile-max) {
+    padding: 32px 0 40px;
+  }
 }
 
 .return_inner {
@@ -10,11 +14,25 @@
   @include title;
   margin-bottom: 16px;
   text-align: left;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
 }
 
 .return_text {
   display: block;
   margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .return_list {
@@ -29,4 +47,19 @@
   display: flex;
   align-items: center;
   gap: 12px;
+
+  @media (max-width: $mobile-max) {
+    align-items: flex-start;
+  }
+}
+
+.return_desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-gray;
+
+  @media (max-width: $mobile-max) {
+    line-height: 22px;
+  }
 }

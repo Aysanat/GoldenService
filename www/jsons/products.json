@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "title": "Вариативный замок Golden Soft для отеля",
+      "visual": "images/gs-popular-2.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "8 000₽",
+      "newCost": "7 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "Нет в наличии",
+      "availableIcon": "images/gs-catalog-not.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-3.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "39 000₽",
+      "newCost": "33 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-4.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "12 000₽",
+      "newCost": "9 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Вариативный замок Golden Soft для отеля",
+      "visual": "images/gs-popular-2.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "8 000₽",
+      "newCost": "7 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "Нет в наличии",
+      "availableIcon": "images/gs-catalog-not.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-3.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "39 000₽",
+      "newCost": "33 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-4.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "12 000₽",
+      "newCost": "9 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Вариативный замок Golden Soft для отеля",
+      "visual": "images/gs-popular-2.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "8 000₽",
+      "newCost": "7 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "Нет в наличии",
+      "availableIcon": "images/gs-catalog-not.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-3.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "39 000₽",
+      "newCost": "33 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-4.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "12 000₽",
+      "newCost": "9 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Вариативный замок Golden Soft для отеля",
+      "visual": "images/gs-popular-2.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "8 000₽",
+      "newCost": "7 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "Нет в наличии",
+      "availableIcon": "images/gs-catalog-not.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-3.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "39 000₽",
+      "newCost": "33 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    },
+    {
+      "title": "Дверной Замок Golden Soft для офиса",
+      "visual": "images/gs-popular-4.jpg",
+      "stars": "3",
+      "reviews": "(12) отзывов",
+      "pastCost": "12 000₽",
+      "newCost": "9 000₽",
+      "sale": "SALE",
+      "present": "Подарок",
+      "available": "В наличии",
+      "availableIcon": "images/gs-catalog-have.svg"
+    }
+  ]
+}
