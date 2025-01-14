@@ -5,6 +5,13 @@
   gap: 16px;
 }
 
+.reviews_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .reviews_item {
   padding: 0 24px 24px 24px;
   border: 1px solid #EAEAEA
