@@ -1,0 +1,20 @@
+.breadcrumb {
+  margin-bottom: 40px;
+}
+
+.breadcrumb_list {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb_link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: none;
+  color: $color-dark;
+
+  &.active {
+    color: $color-light-gray;
+  }
+}

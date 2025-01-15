@@ -1,5 +1,79 @@
 $(document).ready(function() {
 
+  let catalogModule = (function() {
+    let productsContainer = $('.cards_wrap');
+    let paginationConatiner = $('.pagination');
+    let itemPurePage = 12;
+    let currentPage = 1;
+    let products = [];
+
+    async function loadProducts() {
+      try {
+        let response = await $.ajax({
+          url: 'products.json',
+          type: 'GET',
+          dataType: 'json'
+        });
+        if (! response) {
+          throw new Error('ошибка 404')
+        } else {
+          products == response.products
+        }
+      } catch(error) {
+        console.error('oшибка загрузки товаров', error)
+        productsContainer.html('<p>произошла oшибка загрузки товаров, попробуйте позже</p>')
+      }
+    }
+    function renderProducts() {
+      productsContainer.empty()
+      let startIndex = (currentPage - 1) * itemPurePage
+      let endIndex = startIndex + itemPurePage
+      let currentPageProduct = products.slice(startIndex, endIndex)
+      if (currentPageProduct.length === 0) {
+        productsContainer.html('<p>товары не найдены</p>')
+        return
+      }
+      currentPageProduct.forEach(function(product) {
+        const card = $('<article>').addClass('card').html(`<div class="card_visual">
+                <img src="" alt="" class="card_image">
+              </div>
+              <div class="card_row">
+                <div class="card_column">
+                  <div class="card_available">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('${product.availableIcon}');"></i>
+                    </div>
+                    <p class="card_text">${product.available}</p>
+                  </div>
+                  <div class="card_present">
+                    <div class="icon">
+                      <i class="icon_img" style="background-image: url('images/gs-catalog-present.svg');"></i>
+                    </div>
+                    <p class="card_text">Подарок</p>
+                  </div>
+                </div>
+                <div class="card_sale">SALE</div>
+              </div>
+
+              <div class="card_info">
+                <h3 class="card_title"><a href="product.html" class="card_link">${product.title}</a></h3>
+                <p class="card_cost">${product.newCost} <span class="card_span">${product.pastCost}</span></p>
+              </div>
+        `);
+        productsContainer.append(card)
+      })
+      //обновление пагинации
+    }
+    function renderPagination() {
+      paginationConatiner.empty()
+      let totalPages = Math.ceil(products.length / itemPurePage)
+      for (let i = 1; i <= totalPages; i++) {
+        let button = $('<button>').text(i)
+      }
+    }
+  })
+
+
   let $dropdown = $('.js-dropdown');
 
   $('.js-menu-catalog').on('click', function() {
