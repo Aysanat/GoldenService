@@ -13,6 +13,7 @@
 
 .categories_title {
   @include title;
+  margin-bottom: 64px;
 }
 
 .categories_sort {

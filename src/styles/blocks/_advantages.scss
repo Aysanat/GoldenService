@@ -12,6 +12,7 @@
 
 .advantages_title {
   @include title;
+  margin-bottom: 56px;
 }
 
 .advantages_list {
@@ -25,13 +26,15 @@
 }
 
 .advantages_item {
+  flex-basis: calc(33.33% - 60px / 3);
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 32px;
   text-align: center;
-  box-shadow: 1px 0px 0px 0px #C4CDD5 inset;
-  box-shadow: -1px 0px 0px 0px #C4CDD5 inset;
+  border-right: 1px solid #C4CDD5;
+  border-left: 1px solid #C4CDD5;
 
   @media (max-width: $mobile-max) {
     padding: 24px 28px;

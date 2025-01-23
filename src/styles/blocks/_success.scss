@@ -17,6 +17,10 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba($color-dark, .6);
+
+  &.open {
+    display: block;
+  }
 }
 
 .success_visual {
@@ -58,4 +62,10 @@
   color: #fff;
   background-color: $color-accent;
   border: none;
+  transition: background-color .2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-hover;
+  }
 }

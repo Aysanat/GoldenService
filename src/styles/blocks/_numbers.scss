@@ -73,7 +73,7 @@
 .numbers_text {
   font-size: 18px;
   line-height: 37px;
-  color: rgba(#fff, .8);
+  color: $color-gray;
 
   @media (max-width: $mobile-max) {
    font-size: 14px;

@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+  let success = $('.success_fade')
+
+  $('.fill_btn').on('click', function(event) {
+    event.preventDefault()
+    success.addClass('open')
+  });
+
+  $('.success_btn').on('click', function() {
+    success.removeClass('open')
+  });
+
   let catalogModule = (function() {
     let productsContainer = $('.cards_wrap');
     let paginationConatiner = $('.pagination');
@@ -64,6 +75,7 @@ $(document).ready(function() {
       })
       //обновление пагинации
     }
+
     function renderPagination() {
       paginationConatiner.empty()
       let totalPages = Math.ceil(products.length / itemPurePage)
@@ -72,7 +84,6 @@ $(document).ready(function() {
       }
     }
   })
-
 
   let $dropdown = $('.js-dropdown');
 

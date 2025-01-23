@@ -78,4 +78,10 @@
   color: #fff;
   background-color: #4295E4;
   border: 0;
+  transition: background-color .2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-hover;
+  }
 }

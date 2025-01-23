@@ -36,6 +36,11 @@
   position: relative;
   width: 24px;
   //height: 25px;
+
+  &.filter-open {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .accordion_open_icon {
@@ -57,6 +62,11 @@
   margin-left: auto;
   position: relative;
   width: 24px;
+
+  &.filter-close {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .accordion_close_icon {
